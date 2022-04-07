@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:local="clr-namespace:MOHViewer"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+
+    <Style TargetType="{x:Type DataGrid}" x:Key="DataGridStyle">
+        <Setter  Property="Background" Value="White"/>
+        <Setter  Property="AutoGenerateColumns"  Value="False"/>
+        <Setter  Property="HorizontalGridLinesBrush" Value="Black" />
+        <Setter  Property="RowHeaderWidth" Value="1"/>
+        <Setter  Property="BorderThickness" Value="1,1,1,1" />
+        <Setter  Property="BorderBrush" Value="Black"/>
+        <Setter  Property="ColumnHeaderHeight" Value="22"/>
+        <Setter  Property="RowHeight" Value="25"/>
+        <Setter  Property="CanUserAddRows" Value="False"/>
+        <Setter  Property="IsReadOnly" Value="true"/>
+        <Setter  Property="ColumnWidth" Value="140"/>
+    </Style>
+    <Style TargetType="{x:Type DataGridColumnHeader}" x:Key="GrdiHeaderStyle">
+        <Setter Property="TextElement.Foreground" Value="Blue"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+    </Style>
+
+</ResourceDictionary>
